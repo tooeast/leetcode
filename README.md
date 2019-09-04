@@ -1,2 +1,3 @@
 # leetcode
-leetcode recpde! 
+
+> 记录一下自己的leetcode题目！！
