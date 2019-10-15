@@ -46,26 +46,23 @@ var tree2str = function(t) {
 
   let check = node => {
     res += '(';
-    if(node && node.val) {
+    if(node && node.val !== null) {
       res += node.val;
 
       if(node.left) {
         check(node.left);
       }
 
-      if(!node.left && node.right) {
-        check(node.left);
+      if(node.right) {
+        if(!node.left) {
+          check(node.left);
+        }
         check(node.right);
       }
     }
     
     res += ')';
   }
-
-  // res = t.val;
-
-  // check(t.left);
-  // check(t.right);
   check(t);
 
   return res.replace(/^\(|\)$/g, '');
@@ -76,11 +73,11 @@ function Node(val) {
   this.left = this.right = null;
 }
 
-const tree = new Node(1);
+const tree = new Node(0);
 
-tree.left = new Node(2);
-tree.right = new Node(3);
-tree.left.left = new Node(4);
+// tree.left = new Node(2);
+// tree.right = new Node(3);
+// tree.left.right = new Node(4);
 
 console.log(tree2str(tree));
 
