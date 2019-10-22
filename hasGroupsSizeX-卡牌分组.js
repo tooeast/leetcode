@@ -42,10 +42,44 @@
  * @return {boolean}
  */
 var hasGroupsSizeX = function(deck) {
-    
+  deck = deck.sort((a, b) => a - b);
+
+  let arr = [], tmp = deck[0], num = 0;
+
+  for (let i = 0; i < deck.length; i++) {
+    if(deck[i] == tmp) {
+      num++;
+    }
+    else {
+      arr.push(num);
+      num = 1;
+      tmp = deck[i]
+    }
+  }
+
+  arr.push(num);
+  // 以上这是为了求出每个数字出现的次数
+
+  arr = arr.sort((a, b) => a - b);
+
+  // 求最大公约数
+  let maxNum = (a, b) => b ? maxNum(b, a % b) : a;
+
+  tmp = arr[0];
+
+  // arr 排序后，第一个是最小值。然后每个值和第一个值求最大公约数，都有的话就OK
+  for(let i = 0; i < arr.length; i++) {
+    // 有一个不行就不行
+    if(maxNum(tmp, arr[i]) == 1) {
+      return false;
+    }
+  }
+
+  return true;
 };
 
-const deck = [1,1,2,2,2,2];
+const deck = [1];
+// const deck = [1,1,1,2,2,2,3,3,3];
 
 console.log(hasGroupsSizeX(deck));
 
