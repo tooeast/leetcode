@@ -34,6 +34,7 @@
 1 <= deck.length <= 10000
 0 <= deck[i] < 10000
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards
 */
 

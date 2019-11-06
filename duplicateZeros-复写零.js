@@ -17,6 +17,7 @@
 1 <= arr.length <= 10000
 0 <= arr[i] <= 9
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/duplicate-zeros
 */
 

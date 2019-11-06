@@ -19,6 +19,7 @@
 输出: [[3,5],[6,9],[12,14]]
 说明:  1 <= S.length <= 1000
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/positions-of-large-groups
 */
 

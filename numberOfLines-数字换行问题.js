@@ -27,6 +27,8 @@ S = "bbbcccdddaaa"
 S 只包含小写字母。
 widths 是长度为 26的数组。
 widths[i] 值的范围在 [2, 10]
+
+来源：力扣（LeetCode）
 */
 
 /**

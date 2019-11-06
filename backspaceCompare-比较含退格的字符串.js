@@ -21,6 +21,7 @@
 1 <= T.length <= 200
 S 和 T 只含有小写字母以及字符 '#'。
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/backspace-string-compare
 */
 

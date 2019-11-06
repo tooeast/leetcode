@@ -10,6 +10,7 @@
 输入：text = "we will we will rock you", first = "we", second = "will"
 输出：["we","rock"]
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/occurrences-after-bigram
 */
 

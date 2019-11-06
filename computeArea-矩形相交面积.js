@@ -15,6 +15,7 @@
 输出: 45
 说明: 假设矩形面积不会超出 int 的范围。
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/rectangle-area
 */
 

@@ -22,6 +22,7 @@ hashSet.contains(2);    // 返回  false (已经被删除)
 操作的总数目在[1, 10000]范围内。
 不要使用内建的哈希集合库。
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/design-hashset
 */
 

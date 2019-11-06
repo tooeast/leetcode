@@ -19,6 +19,7 @@
 1 <= str2.length <= 1000
 str1[i] 和 str2[i] 为大写英文字母
 
+来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/greatest-common-divisor-of-strings
 */
 
